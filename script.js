@@ -59,3 +59,5 @@ let right = document.querySelector('#right');
 right.addEventListener('click',()=>moveIt(moveTotal-=40));
 
 initializeDots();
+
+let slide = setInterval(()=>moveIt(moveTotal-=40), 5000);
